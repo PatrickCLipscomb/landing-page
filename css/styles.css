@@ -36,11 +36,28 @@ th.fontbig {
   font-size: 20px
 }
 
-button.standout {
+a.standout {
   font-size: 20px;
   margin: 20px 10px;
-  background-color: green;
+  background-color: #629632;
+  color: #eee;
   font-family: serif;
   font-weight: bolder;
   padding: 10px 20px;
+}
+
+div.bpadding {
+  padding-bottom: 20px;
+}
+
+div.tpadding {
+  padding-top: 20px;
+}
+
+ul.cent {
+  text-align: center;
+}
+
+ul.inline {
+  display:inline-block;
 }

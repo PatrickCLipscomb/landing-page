@@ -5,6 +5,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 </head>
 <body>
   <header>
@@ -20,15 +21,86 @@
         <li><img src="img/patrick.jpg" alt="patrick"></li>
       </ul>
     </div>
+  </div>
+
+<!-- Menu Bar -->
+
+  <div class="navbar navbar-default">
     <div class="container">
-      <button type="button" id="PatsButton" data-toggle="button" class="btn btv-primary standout" aria-pressed="false" autocomplete="off">
-        Comments
-      </button>
-      <button type="button" id="PatsButton" data-toggle="button" class="btn btv-primary standout" aria-pressed="false" autocomplete="off">
-        Donate
-      </button>
+      <a class="btn btn-primary standout" data-toggle="modal" href="#CommentModal">Send me a Comment</a>
+      <a class="btn btn-primary standout" data-toggle="modal" href="#Donate">Donate to the Cause</a>
     </div>
   </div>
+
+  <!-- Broken nav
+  <div class="container">
+    <ul class="nav navbar-nav cent">
+      <li class="active>"><a href="#">Navigate to Patrick's Repository</a></li>
+      <li><a href="#">Donate to the cause</a></li>
+      <li><a href="#">Learn more about Patrick</a></li>
+    </ul>
+  </div>
+  -->
+
+
+<!-- Modal -->
+
+      <div class="modal fade" id="CommentModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Your comment will go in my upcoming book!</h4>
+            </div>
+            <div class="modal body">
+              <form class="form">
+                <div class="form-group">
+                  <label class="sr-only" for="mobilePhone">Mobile Phone</label>
+                  <input type="tel" class="form-control" id="mobilePhone" placeholder="mobile phone">
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Voting for Bernie</option>
+                    <option>Not going to Vote</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary" data-dismiss="modal">Send me your comment!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="Donate">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Show me the money!</h4>
+            </div>
+            <div class="modal body">
+              <form class="form">
+                <div class="form-group">
+                  <label class="sr-only" for="mobilePhone">Mobile Phone</label>
+                  <input type="tel" class="form-control" id="mobilePhone" placeholder="mobile phone">
+                </div>
+                <div class="form-group">
+                  <select class="form-control">
+                    <option>Recognize my contribution.</option>
+                    <option>I want to remain anonymous</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary" data-dismiss="modal">Send me your comment!</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
 
 <!-- Columns -->
 
@@ -36,14 +108,16 @@
     <div class="row">
       <div class="col-sm-6">
         <h2 class="silver-header">About Patrick</h2>
-        <p>Hello World...those are the lines of text I've found myself writing time and time again as I have tried to figure out this whole programming thing. I have come to Portland, OR to finally buckle down and follow my ambitions of becoming a web developer.</p>
+        <p>Hello World...those are the lines of text I've found myself writing time and time again as I have tried to figure out this whole programming thing. I have come to Portland, OR to finally buckle down and follow my ambitions of becoming a web developer. I plan to do the Ruby on Rails track here at Epicodus, and from there move into a junior web development position in the Portland area.</p>
       </div>
       <div class="col-sm-6">
         <h2 class="silver-header">Hobbies</h2>
-        <ul>
+        <ul class="inline">
           <li>Playing tennis</li>
           <li>Trying out new foods and beers</li>
           <li>Spending time with friends and family</li>
+          <li>Drinking coffee, lots of coffee</li>
+          <li>Spending times outdoors going on hikes and the such</li>
         </ul>
       </div>
     </div>
@@ -51,18 +125,20 @@
   <hr>
 
 <!-- Carousel -->
-
   <div class="container">
     <h2 class="silver-header">Things to know about Patrick</h2>
+  </div>
+  <div class="container">
     <div class="carousel slide jumbotron" id="PatsCarousel">
       <div class="container">
         <div class="carousel-inner">
-            <div class="item active row">
+            <div class="item row active">
               <div class="col-sm-6">
                 <img class="width" src="img/U-of-R.jpg" alt="Redlands Admin. building">
               </div>
               <div class="col-sm-6">
-                <p>I attended the University of Redlands for 4 years and received my B.S. in Global Business.
+                <p>I attended the University of Redlands for 4 years and received my B.S. in Global Business.</p>
+                <p>I have worked at both a logistics company and a GIS (Geographic Information Systems) company. Both of these positions had a geographic aspect to the work.</p>
               </div>
             </div>
             <div class="item row">
@@ -70,8 +146,8 @@
                 <img class="width" src="img/redlandstennis.jpg" alt="Redlands tennis team">
               </div>
               <div class="col-sm-6">
-                <p>I played tennis at Redlands all four years in the number 1 singles and doubles position. I was All-American in doubles my frshman and senior year, and All-American in singles all four years.
-                </p>
+                <p>I played tennis at Redlands all four years of college. I was All-American in doubles my frshman and senior year, and All-American in singles all four years.</p>
+                <p>I have been playing sports since I was 6 years old and I don't plan on stopping anytime soon.</p>
               </div>
             </div>
             <div class="item row">
@@ -84,10 +160,11 @@
                 </div>
               </div>
               <div class="col-sm-6">
-                <p>I studied abroad in both Salamanca and Granada, Spain for a total of 6 months abroad.
+                <p>I studied abroad in both Salamanca and Granada, Spain for a total of 6 months abroad.</p>
+                <p>My favorite Spanish city is Barcelona, even though they speak Catalan there. My favorite region of Spain is the Basque Country, even though there they speak Basque.</p>
               </div>
             </div>
-        </div>
+          </div>
       </div>
       <a class="left carousel-control" href="#PatsCarousel" data-slide="prev">
         <span class="icon-prev"></span>
@@ -147,7 +224,9 @@
   </div>
   <footer>
     <p class="foot">Created May 27, 2016 in the Epicodus Offices</p>
+  </footer>
   <script src="js/bootstrap.min.js"></script>
   <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 </html>
