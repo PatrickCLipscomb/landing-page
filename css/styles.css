@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+  font-family: fantasy;
+}
+
+.silver-header {
+  background-color: #C0C0C0;
+  font-weight: bolder;
+  padding: 15px 0px;
+}
+
+.tablefont {
+  font-family: monospace;
+  font-weight: bold;
+}
