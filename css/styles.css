@@ -13,3 +13,34 @@ body {
   font-family: monospace;
   font-weight: bold;
 }
+
+img.width {
+  width: 100%;
+}
+
+img.widthpx {
+  float: left
+  width: 200px;
+}
+
+.right {
+  float: right;
+}
+
+p.foot {
+  font-family: cursive;
+  font-weight: lighter;
+}
+
+th.fontbig {
+  font-size: 20px
+}
+
+button.standout {
+  font-size: 20px;
+  margin: 20px 10px;
+  background-color: green;
+  font-family: serif;
+  font-weight: bolder;
+  padding: 10px 20px;
+}
