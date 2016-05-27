@@ -58,6 +58,6 @@ ul.cent {
   text-align: center;
 }
 
-ol.inline {
+ul.inline {
   display:inline-block;
 }
